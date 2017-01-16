@@ -10,6 +10,10 @@ function isEvent(num) {
 	return num % 2 === 0;
 }
 
+function isOdd(num) {
+	return num % 2 !== 0;
+}
+
 describe('isEven', function() {
 	it('should return true when number is even', function() {
 		isEvent(4).should.be.true;
@@ -20,6 +24,11 @@ describe('isEven', function() {
 	})
 })
 
+describe('isOdd', function() {
+	it('should return true when number is odd', function() {
+		isOdd(3).should.be.true;
+	});
+})
 function add(num1, num2) {
 	return num1 + num2;
 }
